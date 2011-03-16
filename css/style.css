@@ -224,89 +224,88 @@ button {  width: auto; overflow: visible; }
     Author: 
  */
  
-html, body {
+html, body {  /*full height of page, full width*/
 	height: 100%;
 	width:100%;
-	background-color:#333;
-	text-align:center;
-	}
-
+	background-color:#717171;
+}
 #container {
-	height:100%;
-	min-height:800px;
-	min-width:1000px;
+	height:100%;  /*match height of body*/
+	min-height:800px;  /*needed because i use margin offset negative to get top margin*/
+	min-width:1000px;  /*my imagase will be 960x640*/ 
+	margin:auto;
 }
 #main {
-	position:relative;
-	top:50%; 
-	left:50%;
-	width:1000px;
-	margin-top:-350px;
-	margin-left:-500px;
+	position:relative;  /*inside container*/
+	top:50%;            /*center point of screen*/
+	left:50%;           /*center point of screen*/
+	width:1000px;       
+	margin-top:-350px;  /*min gap at top = 50px, max gap is .5*screen height, minus 350*/
+	margin-left:-500px; /*always centered*/
 }	
 #coin-slider {
-	margin:auto;
+	margin:-480;
 }
 #projects_button {
 	z-index:1001;
 	position:absolute;
-	margin:540px 760px;
+	margin:550px 770px; /*buttons are 100px x200px*/
 }
 #about_button {
 	z-index:1001;
 	position:absolute;
-	margin:0px 0px;
+	margin:0px 0px;     /*top left*/
 }
-.cs-prev, .cs-next {
-    width: 150px;
-	text-align: right;
-}
-#first_column {
-	position:relative;
-	left:50%;
-	margin-left:-480px;
-	width:280px;
-	text-align:left;
+.cs-prev, .cs-next {    /*buttons for back and forward on the coinslider*/
+    width: 80px;
+	text-align:center;
+	vertical-align:middle;
 }
 
-#second_column {
-	position:relative;
-	left:50%;
-	margin-left:-137px;
-	width:280px;
-	text-align:left;
-}
 
-#third_column {
-	position:relative;
-	left:50%;
-	margin-left:206px;
-	width:280px;
-	text-align:left;
+#column_projects {
+	width:274px;
+	height:350px;
+	background-color:#FFF;
 }
-#project_window_1 {
-	background: white;
-    color: #000000;
-    height: 350px;
-    position: absolute;
-    width: 274px;
+#column_spacing {
+	width:69px;
+	height:350px;
+	background-color:#717171;
 }
-
-#project_window_2 {
-	background: white;
-    color: #000000;
-    height: 350px;
-	position:absolute;
-	top:419px;
-    width: 274px;
+#row_spacing{
+	height:69px;
 }
 
 #project_picture {
+	margin:11px 11px;
+	border:1px solid #999999;
+}
+#text_projects {
 	margin:12px 12px;
 }
+
+#column_about {
+	width:196px;
+	height:196px;
+}
+#column_spacing_about {
+	width:26px;
+	height:196px;
+}
+#row_spacing_about {
+	width:666;
+	height:26px;
+}
+#column_me {
+	width:296px;
+	height:418px;
+}
+#resume_dl {
+	width:296px;
+	height:196px;
+}
 	
-
-
 
 	
 
@@ -319,21 +318,17 @@ html, body {
 
 @media all and (orientation:portrait) { 
   /* Style adjustments for portrait mode goes here */
-  
 }
 
 @media all and (orientation:landscape) { 
   /* Style adjustments for landscape mode goes here */
-  
 }
 
 /* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-  
-  
-  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
-     j.mp/textsizeadjust 
+/* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
+    j.mp/textsizeadjust 
   html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
 

@@ -30,69 +30,35 @@
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.6.min.js"></script>
 
-
-<link rel="stylesheet" href="css/coin-slider-styles.css" type="text/css" />
+  <link rel="stylesheet" href="css/coin-slider-styles.css" type="text/css" />
 
 </head>
 
 <body>
+
 <div id="container">
     <header>
     </header>
     <div id="main">
-        
         <div id="coin-slider">
-            <a href="img01_url" target="_blank">
-                <img src='http://placekitten.com/960/640' >
-                <span>
-                    picture 1
-                </span>
-            </a>
-            <a href="imgN_url">
-                <img src='http://placekitten.com/960/641' >
-                <span>
-                    picture 2
-                </span>
-            </a>	
-                <a href="imgN_url">
-                <img src='http://placekitten.com/960/642' >
-                <span>
-                    picture 3
-                </span>
-            </a>	
-                <a href="imgN_url">
-                <img src='http://placekitten.com/960/643' >
-                <span>
-                    picture 4
-                </span>
-            </a>	
-                <a href="imgN_url">
-                <img src='http://placekitten.com/960/644' >
-                <span>
-                    picture 5
-                </span>
-            </a>	
-                <a href="imgN_url">
-                <img src='http://placekitten.com/960/645' >
-                <span>
-                    picture 6
-                </span>
-            </a>	
-                <a href="imgN_url">
-                <img src='http://placekitten.com/960/646' >
-                <span>
-                    picture 7
-                </span>
-            </a>	
-
-        </div>
-        
+            <a href="imgN_url"><img src="images/Slideshow/slide1_about.png" width="960" height="640">
+            <span>"With our thoughts, we make our world"</span></a>
+            <a href="imgN_url"><img src="images/Slideshow/slide2_projects.png" width="960" height="640">
+            <span>I am a: Engineer, Designer, Person.</span></a>	
+            <a href="imgN_url"><img src="images/Slideshow/slide3_family.png" width="960" height="640">
+            <span>Immense Love and Happiness</span></a>	
+            <a href="imgN_url"><img src="images/Slideshow/slide4_amy.png" width="960" height="640">
+            <span>Amy: challenging, evocative, inspiring</span></a>	
+            <a href="imgN_url"><img src="images/Slideshow/slide5_wall_art.png" width="960" height="640">
+            <span>Wall art in my previous apartment</span></a>	
+            <a href="imgN_url"><img src="images/Slideshow/slide6_monkey.png" width="960" height="640">
+            <span>Playful Monkey</span></a>	
+        </div>    
         <div id='projects_button'>
-        <a href="projects.html" title="Projects"><img src="images/about-me.png" alt="place kitten2" width="200" height="100"></a>
+        	<a href="projects.html" title="Projects"><img src="images/buttons/button-projects-final-small.png" width="200" height="100"></a>
         </div>
-
         <div id='about_button'>
-        <a href="about_me.html" title="About Me"><img src="images/projects.png" alt="place kitten" width="200" height="100"></a>
+        	<a href="about_me.html" title="About Me"><img src="images/buttons/button-about-me-final-small.png"></a>
         </div>
         
     </div>
@@ -116,23 +82,24 @@
 	$(document).ready(function() {
 		$('#coin-slider').coinslider(
 {
-width: 960, // width of slider panel
-height: 640, // height of slider panel
-spw: 7, // squares per width
-sph: 5, // squares per height
-delay: 3000, // delay between images in ms
-sDelay: 30, // delay beetwen squares in ms
-opacity: 0.7, // opacity of title and navigation
-titleSpeed: 500, // speed of title appereance in ms
+width: 960,         // width of slider panel
+height: 640,      	// height of slider panel
+spw: 7, 			// squares per width
+sph: 5, 			// squares per height
+delay: 5000, 		// delay between images in ms
+sDelay: 30, 		// delay beetwen squares in ms
+opacity: 0.7, 		// opacity of title and navigation
+titleSpeed: 500, 	// speed of title appereance in ms
 effect: 'straight', // random, swirl, rain, straight
-navigation: true, // prev next and buttons
-links : true, // show images as links 
-hoverPause: true // pause on hover
+navigation: true, 	// prev next and buttons
+links : false, 		// show images as links 
+hoverPause: true 	// pause on hover
 });
 	
 $('#about_button').appendTo('#coin-slider');
 $('#projects_button').appendTo('#coin-slider');
-$('.cs-prev, .cs-next').css('top', '0').css('height', '100%');
+$('.cs-prev, .cs-next').css('top', '0').css('height', '40px');
+$('.cs-buttons').css('margin-left', '-80px');
 
 });
 </script>
