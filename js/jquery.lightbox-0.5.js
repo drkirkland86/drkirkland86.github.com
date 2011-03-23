@@ -313,6 +313,7 @@
 		 *
 		 */
 		function _enable_keyboard_navigation() {
+            _disable_keyboard_navigation();
 			$(document).keydown(function(objEvent) {
 				_keyboard_action(objEvent);
 			});
@@ -359,7 +360,6 @@
 				// If we´re not showing the last image, call the next
 				if ( settings.activeImage != ( settings.imageArray.length - 1 ) ) {
 					settings.activeImage = settings.activeImage + 1;
-						debugger;
 					_set_image_to_view();
 					_disable_keyboard_navigation();
 					return false;
