@@ -114,7 +114,7 @@ a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
 
 
-ul, ol { margin-left: 1.8em; }
+ul, ol { margin-left: 0px; }
 ol { list-style-type: decimal; }
 
 /* Remove margins for navigation lists */
@@ -223,11 +223,28 @@ button {  width: auto; overflow: visible; }
  /* Primary Styles
     Author: 
  */
- 
+#nav_upper_left {
+    position:fixed;
+    top:-2px;
+    width:100%;
+}
+#nav_upper_right {
+    position:fixed;
+    bottom:-5px;
+	right:0px;
+}
+
+#nav_lower_right {
+	position:fixed;
+	bottom:0;
+	right:0;
+    width:100%;
+}
+
 html, body {  /*full height of page, full width*/
 	height: 100%;
 	width:100%;
-	background-color:#717171;
+	background-color:#cbcaca;
 }
 #container {
 	height:100%;  /*match height of body*/
@@ -271,7 +288,7 @@ html, body {  /*full height of page, full width*/
 #column_spacing {
 	width:69px;
 	height:350px;
-	background-color:#717171;
+	background-color:#cbcaca;
 }
 #row_spacing{
 	height:69px;

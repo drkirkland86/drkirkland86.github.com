@@ -29,12 +29,28 @@
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.6.min.js"></script>
 
+  <link rel="stylesheet" media="screen" type="text/css" href="css/ImageOverlay.css" />
   <link href="css/style.css" rel="stylesheet" type="text/css">
 
 
 </head>
 
 <body>
+
+<div id="nav_upper_left">
+<a href="projects.html" title="Portfolio">
+<img src="images/buttons/button-projects-small-other.png" width="200" height="100">
+</div>
+
+<div id="nav_upper_right">
+<a href="index.html" title="Introduction">
+<img src="images/buttons/button-intro-lower-right-small.png" width="200" height="100">
+</div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.metadata.2.1/jquery.metadata.js"></script>
+	<script type="text/javascript" src="js/jquery.ImageOverlay.min.js"></script>
+    
 <div id="container">
     <header>
     </header>
@@ -42,56 +58,139 @@
     	<table>
         <tr>
         	<td id="column_about">
-            <img src="images/about_me/snowboarding.png"> 
+               	<ul id="g1" class="image-overlay">
+                <a>
+                <img src="images/about_me/snowboarding.png"> 
+                <div class="caption">
+                <h3>Snowboarding</h3>
+                </div>
+                </a>
+                </ul>             
+            </td>
+            <td id="column_spacing_about">
+            </td>
+        	<td id="column_about">
+                <ul id="g2" class="image-overlay">
+              	<a>
+                <img src="images/about_me/bicycle.png"> 
+                <div class="caption">
+                <h3>Bicycling</h3>
+                </div>
+                </a>
+                </ul>
             </td>
             <td id="column_spacing_about">
             </td>
             <td id="column_about">
-            <img src="images/about_me/bicycle.png"> 
-            </td>
-            <td id="column_spacing_about">
-            </td>
-            <td id="column_about">
-            <img src="images/about_me/brain.png"> 
+            	<ul id="g3" class="image-overlay">
+                <a>
+            	<img src="images/about_me/brain.png"> 
+                <div class="caption">
+                <h3>Neuroscience</h3>
+                </div>
+                </a>
+                </ul>
             </td>            
             <td id="column_spacing_about">
             </td>
             <td rowspan="3" id="column_me">
-            <img src="images/about_me/my-picture.png">
+              <ul id="name" class="image-overlay {opacity:'.5'}">
+                <a>
+            	<img src="images/about_me/my-picture.png">
+                <div class="caption">
+                <h3>Design Philosophy</h3>
+                <h4>&nbsp; &nbsp; &nbsp; I design and engineer with the belief that successful innovation requires a concerted <strong>process</strong> with <strong>creativity</strong> as a centerpiece, <strong>motivation</strong> as a driver, and <strong>knowledge</strong> informing all.<br/>              
+                                <br/>  
+                &nbsp;&nbsp;&nbsp;&nbsp;“Nothing is more dangerous than an idea when it is the only one we
+have”! &nbsp; ~Emile Chartier.1868-1951<br/>
+                <br/>                
+				&nbsp;&nbsp;&nbsp;&nbsp;I try to define the minimum number of parameters by absorbing the perspective and needs of the client.  The worst thing to do during the introduction to a project is to limit the possibile solutions.  By applying knowledge of technology, materials capability and physical properties, unique (and possibly great!) solutions arise.<br/>                
+                &nbsp;&nbsp;&nbsp;&nbsp;I increase my chances of finding a good idea by giving myself a lot of diverse ones to evaluate.  A rapid series of idea generation sessions begins to tell me where to start asking more questions.<br/>                
+                &nbsp;&nbsp;&nbsp;&nbsp;A breadth to depth approach applies to every milestone of development.  (Group brainstorming is a blast) -also, conveniently, one of the most scintilating experiences since childhood medow romping.<br/>                
+                &nbsp;&nbsp;&nbsp;&nbsp;Finally, early and itterative testing/redesign facilitates efficient, taylored solutions.
+                <br/>
+                <br/>
+
+                </h4>
+                </div>
+                </a>
+                </ul>
             </td>
          </tr>
          <tr id="row_spacing_about">
          </tr>
          <tr>
         	<td id="column_about">
-            <img src="images/about_me/books.png"> 
+            	<ul id="g4" class="image-overlay">
+                <a>
+            	<img src="images/about_me/books.png"> 
+                <div class="caption">
+                <h3>Books</h3>
+                </div>
+                </a>
+                </ul>
             </td>
             <td id="column_spacing_about">
             </td>
             <td id="column_about">
-            <img src="images/about_me/family.png"> 
+                <ul id="g5" class="image-overlay">
+                <a>
+            	<img src="images/about_me/family.png"> 
+                <div class="caption">
+                <h3>Family</h3>
+                </div>
+                </a>
+                </ul>
             </td>
             <td id="column_spacing_about">
             </td>
             <td id="column_about">
-            <img src="images/about_me/nature.png"> 
+                <ul id="g6" class="image-overlay">
+                <a>
+            	<img src="images/about_me/nature.png"> 
+                <div class="caption">
+                <h3>Nature</h3>
+                </div>
+                </a>
+                </ul>
             </td> 
          </tr>
          <tr id="row_spacing_about">
          </tr>
          <tr>
         	<td id="column_about">
-            <img src="images/about_me/technology.png"> 
+                <ul id="g7" class="image-overlay">
+                <a>
+            	<img src="images/about_me/technology.png"> 
+                <div class="caption">
+                <h3>Technology</h3>
+                </div>
+                </a>
+                </ul>
             </td>
             <td id="column_spacing_about">
             </td>
             <td id="column_about">
-            <img src="images/about_me/fashion.png"> 
+                <ul id="g8" class="image-overlay">
+                <a>
+            	<img src="images/about_me/fashion.png"> 
+                <div class="caption">
+                <h3>Fashion</h3>
+                </div>
+                </a>
+                </ul>
             </td>
             <td id="column_spacing_about">
             </td>
             <td id="column_about">
-            <img src="images/about_me/music.png"> 
+            	<ul id="g9" class="image-overlay">
+                <a>
+            	<img src="images/about_me/music.png"> 
+                <div class="caption">
+                <h3>Music</h3>
+                </div>
+                </a>
+                </ul>
             </td>            
             <td id="column_spacing_about">
             </td>
@@ -108,6 +207,23 @@
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  <script type="text/javascript" src="jquery.metadata.2.1/jquery.metadata.js"></script>
+  <script type="text/javascript" src="jquery.ImageOverlay.js"></script>
+  
+  
+	<script type="text/javascript">
+		// JavaScript for the Image Overlay galleries.
+		$("#g1").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
+		$("#g2").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
+		$("#g3").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
+		$("#g4").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
+		$("#g5").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
+		$("#g6").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
+		$("#g7").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
+		$("#g8").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
+		$("#g9").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
+		$("#name").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast', overlay_color: "#fff", opacity: '.3'});		
+	</script>
   
   
   <!--[if lt IE 7 ]>

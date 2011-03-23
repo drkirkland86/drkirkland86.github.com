@@ -6,6 +6,7 @@
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
 
@@ -18,14 +19,11 @@
 
   <!--  Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <!-- CSS : implied media="all" -->
   <link rel="stylesheet" href="css/style.css?v=2">
-  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.6.min.js"></script>
 
@@ -34,6 +32,17 @@
 </head>
 
 <body>
+
+<div id="nav_upper_left">
+<a href="index.html" title="Introduction">
+<img src="images/buttons/button-intro-upper-left-small.png" width="200" height="100">
+</div>
+
+<div id="nav_upper_right">
+<a href="about_me.html" title="bout_Me">
+<img src="images/buttons/button-about-me-small.png" width="200" height="100">
+</div>
+
 <div id="container">
     <div id="main">
     	<table>
@@ -208,7 +217,7 @@
     <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
   <![endif]-->
 <!--Pluggins for jquery after this line-->
-<script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
 <script type="text/javascript">
 	$(function() {
 		$('a.lightbox').lightBox(
@@ -216,8 +225,9 @@
 	overlayBgColor: '#FFF',
 	overlayOpacity: 0.6,
 	containerResizeSpeed: 350,
-	txtImage: 'Imagem',
-	txtOf: 'de',
+	txtImage: 'Image',
+	txtOf: 'of',
+	keyToPrev: 'm',
 	});
 });
 </script>
