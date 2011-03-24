@@ -38,7 +38,7 @@
 <img src="images/buttons/button-intro-upper-left-small.png" width="200" height="100"/></a>
 </div>
 
-<div id="nav_upper_right">
+<div id="nav_lower_right">
 <a href="about_me.html" title="bout_Me">
 <img src="images/buttons/button-about-me-small.png" width="200" height="100"/></a>
 </div>
@@ -219,17 +219,16 @@
 <!--Pluggins for jquery after this line-->
 <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
 <script type="text/javascript">
-	$(function() {
-		$('a.lightbox').lightBox(
-	{
-    fixedNavigation:false ,
-	//overlayBgColor: '#FFF',
-	overlayOpacity: 0.8,
-	//containerResizeSpeed: 350,
-	//txtImage: 'Image',
-	//txtOf: 'of',
-	//keyToPrev: 'm',
-	});
+$(function(){
+	$('a.lightbox').lightBox({
+	    fixedNavigation:false ,
+		//overlayBgColor: '#FFF',
+		overlayOpacity: 0.8,
+		//containerResizeSpeed: 350,
+		//txtImage: 'Image',
+		//txtOf: 'of',
+		//keyToPrev: 'm',
+		});
 });
 </script>
 

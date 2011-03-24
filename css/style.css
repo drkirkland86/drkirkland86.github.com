@@ -1,8 +1,6 @@
 /* 
   HTML5 ✰ Boilerplate 
-  
   style.css contains a reset, font normalization and some base styles.
-  
   credit is left where credit is due.
   much inspiration was taken from these projects:
     yui.yahooapis.com/2.8.1/build/base/base.css
@@ -77,7 +75,7 @@ input, select { vertical-align:middle; }
    * we normalize monospace styles ourselves
    * table font-size is reset in the HTML5 reset above so there is no need to repeat
 */
-body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */
+body { font:13px/1.231 sans-serif; *font-size:small;} /* hack retained to preserve specificity */
 
 select, input, textarea, button { font:99% sans-serif; }
 
@@ -215,139 +213,126 @@ button {  width: auto; overflow: visible; }
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
 .clearfix { zoom: 1; }
 
+/* Primary Styles Author:  */
+/* Primary Styles Author:  */
+/* Primary Styles Author:  */
 
 
-
-
-
- /* Primary Styles
-    Author: 
- */
-#nav_upper_left {
-    position:fixed;
-    top:-2px;
-    width:100%;
-}
-#nav_upper_right {
-    position:fixed;
-    bottom:-5px;
-	right:0px;
-}
-
-#nav_lower_right {
-	position:fixed;
-	bottom:0;
-	right:0;
-    width:100%;
-}
-
-html, body {  /*full height of page, full width*/
-	height: 100%;
-	width:100%;
-	background-color:#cbcaca;
-}
-#container {
-	height:100%;  /*match height of body*/
-	min-height:800px;  /*needed because i use margin offset negative to get top margin*/
-	min-width:1000px;  /*my imagase will be 960x640*/ 
-	margin:auto;
-}
-#main {
-	position:relative;  /*inside container*/
-	top:50%;            /*center point of screen*/
-	left:50%;           /*center point of screen*/
-	width:1000px;       
-	margin-top:-350px;  /*min gap at top = 50px, max gap is .5*screen height, minus 350*/
-	margin-left:-500px; /*always centered*/
-}	
-#coin-slider {
-	margin:-480;
-}
-#projects_button {
-	z-index:1001;
-	position:absolute;
-	margin:550px 770px; /*buttons are 100px x200px*/
-}
-#about_button {
-	z-index:1001;
-	position:absolute;
-	margin:0px 0px;     /*top left*/
-}
-.cs-prev, .cs-next {    /*buttons for back and forward on the coinslider*/
-    width: 80px;
-	text-align:center;
-	vertical-align:middle;
-}
-
-
-#column_projects {
-	width:274px;
-	height:350px;
-	background-color:#FFF;
-}
-#column_spacing {
-	width:69px;
-	height:350px;
-	background-color:#cbcaca;
-}
-#row_spacing{
-	height:69px;
-}
-
-#project_picture {
-	margin:11px 11px;
-	border:1px solid #999999;
-}
-#text_projects {
-	margin:12px 12px;
-}
-
-#column_about {
-	width:196px;
-	height:196px;
-}
-#column_spacing_about {
-	width:26px;
-	height:196px;
-}
-#row_spacing_about {
-	width:666;
-	height:26px;
-}
-#column_me {
-	width:296px;
-	height:418px;
-}
-#resume_dl {
-	width:296px;
-	height:196px;
-}
+/*All Pages*/
+	html, body {  /*full height of page, full width*/
+		height: 100%;
+		width:100%;
+		background-color:#cbcaca;
+		overflow:visible;
+		font:Arial, Helvetica, sans-serif;
+	}
+	#container {
+		height:100%;  /*match height of body*/
+		min-height:800px;  /*needed because i use margin offset negative to get top margin*/
+		min-width:1000px;
+		margin:auto;
+	}
+	#main {
+		position:relative;  /*inside container*/
+		top:50%;            /*center point of screen*/
+		left:50%;           /*center point of screen*/
+		width:1000px;       
+		margin-top:-350px;  /*min gap at top = 50px, max gap is .5*screen height, minus 350*/
+		margin-left:-500px; /*always centered*/
+	}
 	
+/*Index*/
+	#coin-slider {
+		margin:-480;
+	}
+	#projects_button {
+		z-index:1001;
+		position:absolute;
+		margin:550px 770px; /*buttons are 100px x200px*/
+	}
+	#about_button {
+		z-index:1001;
+		position:absolute;
+		margin:0px 0px;     /*top left*/
+	}
 
+/*Both Project and about me pages - the buttons*/
+	#nav_upper_left {
+		position:fixed;
+		top:-2px;
+		width:100%;
+		z-index:1001;
+	}
+	#nav_lower_right {
+		position:fixed;
+		bottom:-5px;
+		right:0px;
+		z-index:1001;	
+	}
+
+/*Projects Page*/
+	#column_projects {
+		width:274px;
+		height:350px;
+		background-color:#FFF;
+	}
+	#column_spacing {
+		width:69px;
+		height:350px;
+		background-color:#cbcaca;
+	}
+	#row_spacing{
+		height:69px;
+	}
 	
+	#project_picture {
+		margin:11px 11px;
+		border:1px solid #999999;
+	}
+	#text_projects {
+		margin:12px 12px;
+	}
+	.cs-prev, .cs-next {    /*buttons for back and forward on the coinslider*/
+		width: 80px;
+		text-align:center;
+		vertical-align:middle;
+	}
 
-
+/*About Me Page*/
+	#column_about {
+		width:196px;
+		height:196px;
+	}
+	#column_spacing_about {
+		width:26px;
+		height:196px;
+	}
+	#row_spacing_about {
+		width:666;
+		height:26px;
+	}
+	#column_me {
+		width:296px;
+		height:418px;
+	}
+	#resume_dl {
+		width:296px;
+		height:196px;
+	}
 
 /*
  * Media queries for responsive design
  * These follow after primary styles so they will successfully override. 
  */
-
-@media all and (orientation:portrait) { 
-  /* Style adjustments for portrait mode goes here */
-}
-
-@media all and (orientation:landscape) { 
-  /* Style adjustments for landscape mode goes here */
-}
+	@media all and (orientation:portrait) { /* Style adjustments for portrait mode goes here */ }
+	@media all and (orientation:landscape) { /* Style adjustments for landscape mode goes here */ }
 
 /* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {
-/* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
+	@media screen and (max-device-width: 480px) {
+	/* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
     j.mp/textsizeadjust 
-  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
-}
+  	html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */ }
 
 /* 
  * print styles
@@ -366,4 +351,3 @@ html, body {  /*full height of page, full width*/
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
 }
-
