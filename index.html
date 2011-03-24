@@ -79,27 +79,26 @@ Remove this if you use the .htaccess -->
 
 <script type="text/javascript" src="js/coin-slider.min.js"></script>
 <script type="text/javascript">
-$(function() {
-$('#coin-slider').coinslider(
-{
-width: 960, // width of slider panel
-height: 640, // height of slider panel
-spw: 4, // squares per width
-sph: 4, // squares per height
-delay: 8000, // delay between images in ms
-sDelay: 4, // delay beetwen squares in ms
-opacity: 0.7, // opacity of title and navigation
-titleSpeed: 500, // speed of title appereance in ms
-effect: 'straight', // random, swirl, rain, straight
-navigation: true, // prev next and buttons
-links : false, // show images as links
-hoverPause: true // pause on hover
-});
-
-$('#about_button').appendTo('#coin-slider');
-$('#projects_button').appendTo('#coin-slider');
-$('.cs-prev, .cs-next').css('top', '0').css('height', '40px');
-$('.cs-buttons').css('margin-left', '-80px');
+$(window).load(function() {
+	$('#coin-slider').coinslider(
+		{
+		width: 960, // width of slider panel
+		height: 640, // height of slider panel
+		spw: 4, // squares per width
+		sph: 4, // squares per height
+		delay: 8000, // delay between images in ms
+		sDelay: 4, // delay beetwen squares in ms
+		opacity: 0.7, // opacity of title and navigation
+		titleSpeed: 500, // speed of title appereance in ms
+		effect: 'straight', // random, swirl, rain, straight
+		navigation: true, // prev next and buttons
+		links : false, // show images as links
+		hoverPause: true // pause on hover
+		});
+	$('#about_button').appendTo('#coin-slider');
+	$('#projects_button').appendTo('#coin-slider');
+	$('.cs-prev, .cs-next').css('top', '0').css('height', '40px');
+	$('.cs-buttons').css('margin-left', '-80px');
 
 });
 </script>
