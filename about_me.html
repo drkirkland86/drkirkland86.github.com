@@ -31,21 +31,11 @@
 
   <link rel="stylesheet" media="screen" type="text/css" href="css/ImageOverlay.css" />
   <link href="css/style.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="css/jquery.lightbox-0.5.css" type="text/css" />
 
 </head>
 
 <body>
-
-<div id="nav_upper_left">
-<a href="portfolio.html" title="Portfolio">
-<img src="images/buttons/button-projects-small-other.png" width="200" height="100" /></a>
-</div>
-
-<div id="nav_lower_right">
-<a href="index.html" title="Introduction">
-<img src="images/buttons/button-intro-lower-right-small.png" width="200" height="100"/></a>
-</div>
 
 <div id="container">
     <header>
@@ -152,7 +142,7 @@ have”! &nbsp; ~Emile Chartier.1868-1951<br/>
          <tr id="row_spacing_about">
          </tr>
          <tr>
-        	<td id="column_about">
+        	<td rowspan="3" id="column_about">
                 <ul id="g7" class="image-overlay">
                 <a>
             	<img src="images/about_me/technology.png"> 
@@ -162,9 +152,9 @@ have”! &nbsp; ~Emile Chartier.1868-1951<br/>
                 </a>
                 </ul>
             </td>
-            <td id="column_spacing_about">
+            <td rowspan="3" id="column_spacing_about">
             </td>
-            <td id="column_about">
+            <td rowspan="3" id="column_about_short">
                 <ul id="g8" class="image-overlay">
                 <a>
             	<img src="images/about_me/fashion.png"> 
@@ -174,9 +164,9 @@ have”! &nbsp; ~Emile Chartier.1868-1951<br/>
                 </a>
                 </ul>
             </td>
-            <td id="column_spacing_about">
+            <td rowspan="3" id="column_spacing_about">
             </td>
-            <td id="column_about">
+            <td rowspan="3" id="column_about">
             	<ul id="g9" class="image-overlay">
                 <a>
             	<img src="images/about_me/music.png"> 
@@ -186,10 +176,19 @@ have”! &nbsp; ~Emile Chartier.1868-1951<br/>
                 </a>
                 </ul>
             </td>            
-            <td id="column_spacing_about">
+            <td rowspan="3" id="column_spacing_about">
             </td>
-            <td>
-            <a href="david_kirkland_resume.pdf"><img src="images/buttons/button-resume-small.png"></a>             
+            <td id="column_me_short">       
+            <a href="david_kirkland_resume.pdf">
+            <img src="images/buttons/new_about_button_resume.png"></a>
+            </td>
+         </tr>
+         <tr id="row_spacing_about">
+         </tr>
+         <tr>
+            <td id="column_me_short">       
+            <a href="portfolio.html">
+            <img src="images/buttons/new_about_button_portfolio.png"></a>
             </td>
          </tr>
          </table>     
@@ -203,8 +202,7 @@ have”! &nbsp; ~Emile Chartier.1868-1951<br/>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
   <script type="text/javascript" src="js/jquery.metadata.2.1/jquery.metadata.js"></script>
   <script type="text/javascript" src="js/jquery.ImageOverlay.min.js"></script>
-  
-  
+
 <script type="text/javascript">
 $(window).load(function() {
 		// JavaScript for the Image Overlay galleries.
@@ -217,6 +215,7 @@ $(window).load(function() {
 		$("#g7").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
 		$("#g8").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
 		$("#g9").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
+		$("#g10").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast'});
 		$("#name").ImageOverlay({overlay_speed: 'fast', overlay_speed_out : 'fast', overlay_color: "#fff", opacity: '.3'});
 		   });
 	</script>
